@@ -17,7 +17,7 @@ class DatabaseHandler extends AbstractConnector implements DatabaseHandlerInterf
      * @param string|null $password
      * @throws Exception
      */
-    public function create(?string $user = null, ?string $password = null): void
+    public function createDatabase(?string $user = null, ?string $password = null): void
     {
         $connection = $this->getConnection();
         $database = $connection->getDatabase();
@@ -32,7 +32,7 @@ class DatabaseHandler extends AbstractConnector implements DatabaseHandlerInterf
      * @param string|null $password
      * @throws Exception
      */
-    public function remove(?string $user = null, ?string $password = null): void
+    public function removeDatabase(?string $user = null, ?string $password = null): void
     {
         $connection = $this->getConnection();
         $database = $connection->getDatabase();

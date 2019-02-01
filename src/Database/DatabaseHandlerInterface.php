@@ -12,11 +12,11 @@ interface DatabaseHandlerInterface
      * @param string|null $user
      * @param string|null $password
      */
-    public function create(?string $user = null, ?string $password = null): void;
+    public function createDatabase(?string $user = null, ?string $password = null): void;
 
     /**
      * @param string|null $user
      * @param string|null $password
      */
-    public function remove(?string $user = null, ?string $password = null): void;
+    public function removeDatabase(?string $user = null, ?string $password = null): void;
 }

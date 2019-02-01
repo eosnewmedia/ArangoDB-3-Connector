@@ -17,7 +17,7 @@ class StatementFactory extends AbstractConnector implements StatementFactoryInte
      * @return Statement
      * @throws Exception
      */
-    public function create(array $data): Statement
+    public function createStatement(array $data): Statement
     {
         return new Statement($this->getConnection(), $data);
     }
@@ -28,7 +28,7 @@ class StatementFactory extends AbstractConnector implements StatementFactoryInte
      * @return Statement
      * @throws Exception
      */
-    public function createQuery(string $query, array $bindVars = []): Statement
+    public function createQueryStatement(string $query, array $bindVars = []): Statement
     {
         return new Statement(
             $this->getConnection(),

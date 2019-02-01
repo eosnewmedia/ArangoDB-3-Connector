@@ -14,12 +14,12 @@ interface StatementFactoryInterface
      * @param array $data
      * @return Statement
      */
-    public function create(array $data): Statement;
+    public function createStatement(array $data): Statement;
 
     /**
      * @param string $query
      * @param array $bindVars
      * @return Statement
      */
-    public function createQuery(string $query, array $bindVars = []): Statement;
+    public function createQueryStatement(string $query, array $bindVars = []): Statement;
 }

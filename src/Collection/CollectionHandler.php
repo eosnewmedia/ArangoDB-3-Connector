@@ -58,17 +58,7 @@ class CollectionHandler extends \ArangoDBClient\CollectionHandler implements Col
         $this->create($collection);
     }
 
-    /**
-     * @param string $collection
-     * @param string $type
-     * @param array $fields
-     * @param array $options
-     * @throws Exception
-     */
-    public function createIndex(string $collection, string $type, array $fields, array $options = []): void
-    {
-        $this->index($collection, $type, $fields, null, $options);
-    }
+    
 
     /**
      * @param string $name

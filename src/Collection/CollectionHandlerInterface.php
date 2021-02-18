@@ -33,14 +33,7 @@ interface CollectionHandlerInterface
      */
     public function createEdgeCollection(string $name, bool $overwrite = false, bool $waitForSync = false): void;
 
-    /**
-     * @param string $collection
-     * @param string $type
-     * @param array $fields
-     * @param array $options
-     */
-    public function createIndex(string $collection, string $type, array $fields, array $options = []): void;
-
+    
     /**
      * @param string $name
      */
